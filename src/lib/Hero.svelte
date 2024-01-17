@@ -22,6 +22,10 @@
     margin: 0 auto 2em auto;
     width: fit-content;
   }
+  
+  a {
+    font-size: var(--step-1)
+  }
 </style>
 
 
