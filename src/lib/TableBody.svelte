@@ -17,7 +17,8 @@
   function generateCols(i) {
     const firstName = rows[i][1] ? rows[i][1] : '***********';
     const lastName = rows[i][2] ? rows[i][2] : '';
-    const name = firstName + ' ' + lastName;
+    let name = firstName + ' ' + lastName;
+    if (name.includes('Substitutes')) name = 'Substitutes';
     const phone = rows[i][5] ? rows[i][5] : '';
     const email = rows[i][3] ? rows[i][3] : '';
     const address = rows[i][4] ? rows[i][4] : '';

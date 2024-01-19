@@ -2,7 +2,7 @@
   import { v4 as uuidv4 } from 'uuid';
   export let data; 
   let cols = [''];
-  let values = data.values;
+  let values = JSON.parse(JSON.stringify(data.values));
   let thNames = values[0];
   thNames.shift();
   let i;
